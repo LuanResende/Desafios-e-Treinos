@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'montserrat', sans-serif;
+}
+
+body{
+    background-color: hsl(30, 38%, 92%); 
+}
+.contents{
+    max-width: 1440px;
+    height: 100VH;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+section.cartao-desktop{
+    display: flex;
+        width: 500px;
+        background-color: white;    
+        border-radius: 15px;
+        box-shadow: 2px 5px 15px -4px rgba(0,0,0,0.19); 
+}
+section.cartao-desktop img.mobile{
+    display: none;
+    max-width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+section.cartao-desktop img.desktop{
+    max-width: 50%;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+section.cartao-desktop .texto-cartao{
+   padding: 20px;  
+}
+p.perfume{
+    letter-spacing: 4px;
+    font-size: 12px;
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
+}
+.texto-cartao h1{
+    margin-top: 15px;
+    color: hsl(212, 21%, 14%);
+    font-family: 'Fraunces', sans-serif;
+    font-size: 28px;
+    line-height: 30px;
+}
+p.content{
+    margin-top: 15px;
+    color: hsl(228, 12%, 48%);
+    font-size: 14px;
+}
+.preco{
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    
+}
+.preco h2{
+    font-family: 'Fraunces', sans-serif;
+    font-weight: 700;
+    color:hsl(158, 38%, 45%) ;
+
+}
+.preco p{
+    font-family: 'Fraunces', sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 14px;
+    margin-left: 10px;
+    text-decoration: line-through;
+    color: hsl(228, 12%, 48%);
+}
+i.carrinho{
+    background-image: url(../images/icon-cart.svg);
+    background-repeat: no-repeat;
+    padding: 10px;
+    background-position: center;
+    margin: 0 7px;
+}
+button{ 
+    margin-top: 20px;
+    background-color: hsl(158, 36%, 37%);
+    width: 100%;
+    padding: 15px 0;
+    font-size: 14px;
+    color: white;
+    
+    border: none;
+    border-radius: 6px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+button:hover{
+    background-color: hsl(158, 36%, 24%);
+}
+.credits{
+    color: hsl(228, 12%, 48%);
+}
+@media only screen and (max-width: 480px){
+    section.cartao-desktop{
+    flex-direction: column;
+    width: 90vw;
+}
+    section.cartao-desktop img.mobile{
+        display: block;
+    }
+    section.cartao-desktop img.desktop{
+        display: none;
+    }
+}
